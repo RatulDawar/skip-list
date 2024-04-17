@@ -5,9 +5,11 @@ This project implements a Skip List data structure in C++, providing an efficien
 
 ## Concept
 Skip lists consist of multiple linked lists, each with nodes containing references to nodes in lower levels. By "skipping" ahead in multiple linked lists, skip lists provide faster search operations compared to traditional linked lists.
+Every element has a 1/2 probability to get promoted to the next level.
+The total number of levels are asymptotic to log n.
 
 ## Performance
-- **Time Complexity**:
+- **Time Complexity**: Average case 
   - Search: O(log n)
   - Insertion: O(log n)
   - Deletion: O(log n)
